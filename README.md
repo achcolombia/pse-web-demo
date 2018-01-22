@@ -56,7 +56,7 @@ Con estos datos se puede invocar la aplicación PSE móvil dirctamente desde la 
 		 data-merchant-name="<?php echo $_POST["merchantName"] ?>"
 		 data-return-url="<?php echo $_POST["returnURL"] ?>"></div>
 		 
-2. Llamar la biblioteca javascript b2a.js
+2. Llamar la biblioteca javascript b2a.js (La biblioteca se descarga sólo cuando se usa un user_agent de Android o iOS)
 
 		<script type="text/javascript"
                 src="https://b2a.pse.com.co/api/automata/b2a.js?id=<?php echo $_POST["userType"] . $_POST["authorizerId"] ?>&ts=<?php echo time(); ?>"></script>
